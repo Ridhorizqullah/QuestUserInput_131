@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.selection.selectable
+import androidx.compose.material3.Button
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -71,13 +72,23 @@ fun FormDataDiri(modifier: Modifier
                 bottom = dimensionResource(R.dimen.padding_medium), top =
                     dimensionResource(
                         R.dimen.padding_medium
+
                     )
             ),
             thickness = dimensionResource(R.dimen.divider_tips),
             color = Color.DarkGray
         )
-
-
+        Button(
+            modifier = Modifier.fillMaxWidth(1f),
+            enabled = textAlamat.isNotEmpty(),
+            onClick = {
+                nama = textNama
+                alamat = textAlamat
+                jenis = textJK
+            }
+        ){
+            Text(text = stringResource(R.string.submit))
+        }
 
 
     }
