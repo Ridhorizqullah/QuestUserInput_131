@@ -1,8 +1,11 @@
 package com.example.pertemuan5
 
-
-
-
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
+import androidx.compose.ui.unit.dp
 
 
 @composable
@@ -19,5 +22,35 @@ fun FormDataDiri(modifier: Modifier
     var jenis by remember { mutableStateOf("") }
 
     val gender: List<String> = listOf("Laki-Laki", "Perempuan")
+
+    Column (modifier = Modifier.padding(top = 50.dp),
+        verticalArrangement = Arrangement.Top,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ){
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
