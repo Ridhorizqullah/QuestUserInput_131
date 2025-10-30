@@ -7,7 +7,9 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.unit.dp
 
 
@@ -63,6 +65,21 @@ fun FormDataDiri(modifier: Modifier
             onValueChange = {
 
         )
+
+        Devider(
+            modifier = Modifier.padding(
+                bottom = dimensionResource(R.dimen.padding_medium), top =
+                    dimensionResource(
+                        R.dimen.padding_medium
+                    )
+            ),
+            thickness = dimensionResource(R.dimen.divider_tips),
+            color = Color.DarkGray
+        )
+
+
+
+
     }
 
 
